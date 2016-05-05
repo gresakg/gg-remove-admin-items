@@ -49,11 +49,11 @@ class GG_Remove_Admin_Items {
                     $wp_customize,
                     'removed-menu-items',
                     array(
-                        'label' => 'Items to remove',
+                        'label' => 'Menu items to remove',
                         'section' => 'remove-admin-items',
                         'settings' => 'removed-menu-items',
                         'type' => 'textarea',
-                        'description' => 'One per line'
+                        'description' => 'One per line.'
                     )
                 )
             );
@@ -63,11 +63,12 @@ class GG_Remove_Admin_Items {
                     $wp_customize,
                     'removed-topbar-items',
                     array(
-                        'label' => 'Items to remove',
+                        'label' => 'Topbar items to remove',
                         'section' => 'remove-admin-items',
                         'settings' => 'removed-topbar-items',
                         'type' => 'textarea',
-                        'description' => 'One per line'
+                        'description' => 'String ID-s of toolbar items, one per line. '
+                        . 'Consult WordPress docummentation for details.'
                     )
                 )
             );
